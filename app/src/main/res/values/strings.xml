@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">LoanBook</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="type">
+        <item>Lender</item>
+        <item>Loaner</item>
+    </string-array>
+
+    <string-array name="transaction">
+        <item>Loan</item>
+        <item>Pay</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Peoples Name</string>
+    <string name="date">Date</string>
+    <string name="peoples_type">Peoples Type</string>
+    <string name="peoples_number">Peoples Number</string>
+    <string name="details_of_people">Details of New Person</string>
+    <string name="submit_payment">Submit Transaction</string>
+    <string name="add_amount">Add Amount</string>
+    <string name="show_date">Show Date</string>
+</resources>
