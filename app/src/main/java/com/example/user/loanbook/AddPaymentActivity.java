@@ -9,7 +9,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,9 +26,11 @@ public class AddPaymentActivity extends AppCompatActivity implements AdapterView
     private DatePickerDialog.OnDateSetListener mDateSetLisener;
     public int id[];
     public String name[];
-    Spinner spinner;
+    Spinner spinner,payment_type;
     TextView tv_ShowDate;
-    String label;
+    EditText et_amount;
+    String label,payment,amount;
+    Button submit_transaction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +39,10 @@ public class AddPaymentActivity extends AppCompatActivity implements AdapterView
         context = this;
         db = new MyDb(this);
         spinner = (Spinner) findViewById(R.id.spn_name);
+        payment_type = (Spinner)findViewById(R.id.spr_payment_type);
+        et_amount = (EditText)findViewById(R.id.et_amount_payment);
         tv_ShowDate = (TextView) findViewById(R.id.tv_showdate);
+        submit_transaction = (Button)findViewById(R.id.btn_payment);
     }
 
     @Override
@@ -75,6 +82,22 @@ public class AddPaymentActivity extends AppCompatActivity implements AdapterView
 
             }
         };
+
+        //edit text for money amount
+        payment = String.valueOf(payment_type.getSelectedItem());
+        amount = et_amount.getText().toString().trim();
+
+        //button for confirming payment
+        submit_transaction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                
+            }
+        });
+
+
+
+
 
     }
     //function to load the data from the spinner

@@ -23,4 +23,9 @@
     <string name="submit_payment">Submit Transaction</string>
     <string name="add_amount">Add Amount</string>
     <string name="show_date">Show Date</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="payment_date">Payment Date:</string>
+    <string name="take_payment_from">Take Payment From:</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="money_amount">Money Amount</string>
 </resources>
